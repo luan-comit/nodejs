@@ -1,0 +1,21 @@
+
+span{
+    color: red;
+}    
+div{
+    color: green;
+} 
+#month{
+    color:hotpink;
+}
+.blue{
+    color: blue;
+}
+.weekdays{
+    color:chartreuse;
+    background-color: darkgray;
+}
+.months{
+    color:chocolate;
+    background-color: floralwhite;
+}

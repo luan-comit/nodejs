@@ -1,0 +1,23 @@
+header{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+}
+
+footer{
+    background-color:blue;
+    color: white;
+    text-align: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+}
+
+iframe{
+    border:1px solid;
+    height: 350px;
+    size: 50%;
+
+}

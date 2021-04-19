@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+</head>
+
+<body>
+    <h1>Create User</h1>
+    <hr>
+    <form action="create_user.html" method="get" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>User Form</legend>
+            <label for="username">Username:
+                <input type="text" name="username" placeholder="username" size="30" maxlength="12" required pattern="[a-zA-Z]+"> (username is required and contained letters only)
+            </label>
+            <br>
+            <label for="password">Password:
+                <input type="text" name="password" placeholder="password" size="30" max="12" required pattern="[0-9]+"> (password is required and contained numbers only)
+            </label>
+            <br>
+            <label for="birthday">Day of birth:
+                <input type="date">
+            </label>
+            <br>
+            <label for="email">Email address:
+                <input type="email" placeholder="abc@xyz.xom" required> (an email address is required)
+            </label>
+            <br>
+            <label for="URL">URL:
+                <input type="url" placeholder="https://xyz.com">
+            </label>
+            <div>
+                <br>
+                Select your favourite Superheroes:
+                <br>
+                <input type="radio" value="Superman" name="superheroes" aria-label="Superman">Superman
+                <input type="radio" value="Batman" name="superheroes" checked aria-label="Batman">Batman
+                <input type="radio" value="Wonder Woman" name="superheroes" aria-label="Wonder Woman">Wonder Woman
+                <input type="radio" value="Flash" name="superheroes" aria-label="Flash">Flash
+                <input type="radio" value="Thor" name="superheroes" aria-label="Thor">Thor
+                <input type="radio" value="Hulk" name="superheroes" aria-label="Hulk">Hulk
+            </div>
+            <br>
+            <div>
+                Select your favourite video games:
+                <br>
+                <label for="Fifa">Fifa
+                    <input type="checkbox" name="videogames" value="Fifa">
+                </label>
+                <label for="NHL">NHL
+                    <input type="checkbox" name="videogames" value="NHL">
+                </label>
+                <label for="Resident">Resident
+                    <input type="checkbox" name="videogames" value="Resident">
+                </label>
+                <label for="Evil">Evil
+                    <input type="checkbox" name="videogames" value="Evil">
+                </label>
+                <label for="Uncharted">Uncharted
+                    <input type="checkbox" name="videogames" value="Uncharted">
+                </label>
+            </div>
+            <input type="hidden" name="userid" value="2300">
+            <br>
+            <button name="login"><img width="60" src="./img/register_button2.jpg" alt=""> </button>
+        </fieldset>
+        <hr>
+    </form>
+    <form role="search" method="get" id="search_form" action="https://google.ca/search?">
+        <label for="search">Search something by Google:
+            <input type="search" name="q">
+        </label>
+        <input type="submit" name="btn">
+    </form>
+</body>
+
+</html>

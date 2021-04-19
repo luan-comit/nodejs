@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Luan Le">
+    <meta name="description" content="Creating website using HTML CSS JavaScript">
+    <meta name="keywords" content="html, javascript, css, comit, coder, website">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+    <header>
+        Header section 
+    </header>
+    <hr>
+    <h1>My personal page</h1>
+    <form action="userform">
+        <fieldset>
+            <legend>New user form</legend>
+            <label for="username">Username:
+                <input type="text" name="username" placeholder="username" required pattern="[a-zA-Z0-9]+" maxlength="12" minlength="4"> (username required 4->12 letter characters only)
+            </label>
+            <br>
+            <label for="password">
+                <input type="text" name="password" placeholder="password" required pattern="[a-zA-Z0-9!@#$%^&*]+" maxlength="20" min="6"> (password required 6->20 characters)
+            </label>
+            <br>
+            <label for="email">
+                <input type="email" name="email" placeholder="abc@xyz.com" required> (email address required)
+            </label>
+            <br>
+            <label for="phone">
+                <input type="text" name="phone" pattern="[0-9]+"> (phone number)
+            </label>
+            <br>
+            <label for="occupation">Occupation:
+                <select name="Options" id="option">
+                    <option value="business">business</option>
+                    <option value="homeuser" selected>home user</option>
+                    <option value="student">student</option>
+                    <option value="other">other</option>
+                </select>
+            </label>
+            <br>
+            <label for="bio"> Biography:
+            <br>
+                <textarea name="biography" id="bio" cols="40" rows="10" placeholder="write a short bio about you"></textarea>
+            </label>
+            <br>
+            <label for="birthday">Day of birth:
+                <input type="date" name="birthday">
+            </label>
+            <br>
+            <label for="avatar">
+                <input type="file" name="avatar"> (upload an image for avatar)
+            </label>
+            <br>
+            <label for="resident">Residential:
+                <input type="radio" name="resident" value="citizen">Citizen
+                <input type="radio" name="resident" value="PR" checked>Permanent Resident
+                <input type="radio" name="resident" value="visitor">Visitor
+                <input type="radio" name="resident" value="other">Other
+            </label>
+            <br>
+            <label for="stores">Preferred stores:
+                <input type="checkbox" value="amazon">Amazon
+                <input type="checkbox" value="bestbuy">Bestbuy
+                <input type="checkbox" value="Costco" checked>Costco
+                <input type="checkbox" value="HomeDepot">HomeDepot
+            </label>
+        </fieldset>
+       <button name="clear_content" id="clear-btn">Clear</button>
+        <button name="submit_content" id="clear-btn">Submit</button>
+    </form>
+    <hr>
+    <h1>IFrame Section</h1>
+    <iframe src="../ex_15/index.html" frameborder="0" width="300" height="300"></iframe>
+    <hr>
+    <main>
+        <h1> Video entertainment</h1>
+        <video src="http://techslides.com/demos/sample-videos/small.mp4" poster="http://farm5.staticflickr.com/4115/4821890462_a0bce6010c.jpg" controls></video>
+    </main>
+    <hr>
+    <footer>
+        Footer section
+    </footer>
+</body>
+</html>

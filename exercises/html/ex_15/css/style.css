@@ -1,0 +1,94 @@
+
+
+.sticky--header{
+    z-index: 10;
+    position:sticky;
+    top:0px;
+    width: 100%;
+    box-sizing: inherit;
+    display: block;
+    
+}
+
+ .header--breaking__wrapper {
+    /*position:-webkit-sticky;
+    position: sticky;*/
+    top: 0;
+    width: 100%;
+    height: 10rem;
+    z-index: 11;
+    border: black solid;
+    background-color: blanchedalmond;
+    border-bottom: 1px solid #CACACA;
+    justify-content: space-between;
+    overflow: hidden;
+    font-family: "Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-size:inherit;
+    font-weight: 700;
+    color: #191919;
+    line-height: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-content: center;
+}
+.header__breaking--tittle{
+    width: 18%;
+    height: 8rem;
+    background-color: red;
+    /*border-radius: 0px;*/
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    /*line-height: 3.1em;*/
+    padding: 0px;
+    box-sizing: inherit;
+    border:black solid;
+    display: block;
+    align-content: center;
+}
+
+.header__breaking--second {
+    position: relative;
+    width:60%;
+    height: 8rem;
+    box-sizing: inherit;
+    /*line-height: 3.1em;*/
+    text-transform: none;
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 0px;
+    border:black solid;
+    justify-content: space-around
+}
+
+ .header__breaking--util{
+    position: relative;
+    width: 20%;
+    height: 8rem;
+    background-color: #414699;
+    color: #FFF;
+    font-size: 30px;
+    text-align: center;
+    /*line-height: 3.1em;*/
+    text-transform: none;
+    padding: 0px;
+    border:blue solid ;
+    box-sizing: inherit;
+    display: block;
+    
+}
+.hidden-small-down{
+    color: black;
+}
+span{
+    color: white;
+}
+.row {
+    /*max-width: 100vw;*/
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
