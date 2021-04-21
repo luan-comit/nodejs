@@ -1,23 +1,224 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+
 header{
     background-color: blue;
     color: white;
-    text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 80px;
 }
 
-footer{
-    background-color:blue;
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-container{
+    width: 80%;
+    margin: auto;
+
+}
+.header-container .logo{
+    float: left;
+    width: 7.5%;
+    margin: 0;
+    padding: 0;
+    border: 2px saddlebrown solid;
+}
+.header-container nav{
+    float: right;
+}
+.header-container nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header-container nav li{
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 35px;
+
+    position: relative;
+}
+
+.header-container nav a{
     color: white;
-    text-align: center;
-
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 80px;
+    padding: 5px;
+    border: 1px transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    /*font-size: auto;*/
 }
+
+.header-container nav a:hover{
+    color: brown;
+    border: white solid;
+    cursor: pointer;
+    transition: all ease-out 200ms;
+}
+
+ .header-container nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: brown;
+    position: absolute;
+    top:0;
+    width: 0%;
+    transition: all ease-in-out 200ms;
+}
+ .header-container nav a:hover::before{
+    width: 100%;
+}
+
 
 iframe{
     border:1px solid;
-    height: 350px;
-    size: 50%;
+    width: 100%;
+}
 
+video{
+    box-align: center;
+    width: 100%;
+}
+
+main{
+    padding: 15px;
+}
+
+select {
+    height: 40px;
+    width: 100px;
+}
+
+button {
+    width: 70px;
+    height: 40px;
+    border: 1px brown solid;
+    border-radius: 10px;
+    margin-right: 20px ;
+}
+
+button:hover{
+    color: red;
+}
+.my-frame{
+    border: 10px solid;
+    padding: 30px;
+    align-content: center;
+
+}
+
+ .float-group-left{
+    float: left;
+    size: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+ .float-group-right{
+    float: right;
+    size: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.clear{
+    clear: both;
+}
+.my-form{
+    padding: 15px;
+}
+
+.input-group{
+    padding: 10px;
+}
+
+ 
+.float-group-right:hover,
+.input-group:hover,
+.float-group-left:hover{
+    color: red;
+}
+
+.input-group:after{
+    color: blue;
+}
+
+.my-form label{
+    display: block;
+}
+.my-form input[type="text"], 
+.my-form input[type="email"],
+.my-form textarea {
+    padding: 10px;
+    width: 100%;
+}
+
+#occupation, #birthday, #avatar{
+    display: inline;
+}
+
+.my-form fieldset {
+    padding: 30px;
+}
+
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*
+.nav-footer::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.footer-container nav{
+    margin-top: 10px;
+    float: left; 
+
+} 
+*/
+.footer-container{
+    width: 80%;
+    margin: auto;
+    padding: auto;
+}
+
+.footer-container nav{
+    background-color: black;
+}
+
+.footer-container nav li{
+    display: inline-block; 
+     position: relative; 
+     margin: 0px 10px;
+}
+
+.footer-container nav ul{
+    list-style: none;
+    padding: 34px;
+}
+
+.footer-container .logo{
+    float: left;
+    width: 7.5%;
+    padding: 0;
+    border: 2px saddlebrown solid;
+}
+
+.footer-container nav a{
+    color: white;
+    border: 1px transparent;
+    text-decoration: none;
+    /*font-size: auto;*/
 }
