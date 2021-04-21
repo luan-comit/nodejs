@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Form</title>
+    <link rel="stylesheet" href="./css/user-form.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+        <header>
+            <div class="header-container">
+                <img src="./img/mylogo2.jpeg" alt="logo" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./HTML-exercises.html">HTML Exercises</a></li>
+                        <li><a href="./CSS-exercises.html">CSS Exercises</a></li>
+                        <li><a href="#">User Registration</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="clear-container"></div>
+    <h1>User registration</h1>
+    <form class="my-form" action="userform">
+        <fieldset>
+            <legend>New user form</legend>
+            <div class="input-group">
+                <label for="username">Username: <i>(username required 4->12 letter characters only)</i></label>
+                <input type="text" name="username" placeholder="username" required pattern="[a-zA-Z0-9]+" maxlength="12"
+                    minlength="4">
+            </div>
+            <div class="input-group">
+                <label for="password">Password: <i>(password required 6->20 characters)</i></label>
+                <input type="text" name="password" placeholder="password" required pattern="[a-zA-Z0-9!@#$%^&*]+"
+                    maxlength="20" min="6">
+            </div>
+            <div class="float-group-left">
+                <label for="email">Email: <i>(email address required)</i></label>
+                <input type="email" name="email" placeholder="abc@xyz.com" required>
+            </div>
+            <div class="float-group-right">
+                <label for="phone">Phone number: <i>(optional)</i></label>
+                <input type="text" name="phone" pattern="[0-9]+">
+            </div>
+            <div class="clear"></div>
+    
+            <div class="input-group">
+                <label for="occupation" id="occupation">Occupation: <i>(choose your occupation)</i></label>
+                <select name="Options" id="option">
+                    <option value="business">business</option>
+                    <option value="homeuser" selected>home user</option>
+                    <option value="student">student</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="bio"> Biography:</label>
+                <textarea name="biography" id="bio" cols="40" rows="10"
+                    placeholder="write a short bio about you"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="birthday" id="birthday">Day of birth:</label>
+                <input type="date" name="birthday">
+            </div>
+            <div class="input-group">
+                <label for="avatar" id="avatar"> Choose an image file: <i>(upload an image for avatar)</i></label>
+                <input type="file" name="avatar">
+            </div>
+            <div class="input-group">
+                <label for="resident">Residential:</label>
+                <input type="radio" name="resident" value="citizen">Citizen
+                <input type="radio" name="resident" value="PR" checked>Permanent Resident
+                <input type="radio" name="resident" value="visitor">Visitor
+                <input type="radio" name="resident" value="other">Other
+            </div>
+            <div class="input-group">
+                <label for="stores">Preferred stores:</label>
+                <input type="checkbox" value="amazon" checked>Amazon
+                <input type="checkbox" value="bestbuy">Bestbuy
+                <input type="checkbox" value="Costco" checked>Costco
+                <input type="checkbox" value="HomeDepot">HomeDepot
+            </div>
+        </fieldset>
+        <div class="input-group">
+            <button name="clear_content" id="clear-btn">Clear</button>
+            <button name="submit_content" id="clear-btn">Submit</button>
+        </div>
+    </form>
+    <footer>
+        <div class="footer-container">
+            <nav>
+                <img src="./img/mylogo2.jpeg" alt="logo" class="logo">
+                <ul>
+                    <li>© 2021 ProG Inc.</li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Statement</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

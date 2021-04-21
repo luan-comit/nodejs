@@ -1,0 +1,81 @@
+
+main{
+    padding: 15px;
+}
+
+select {
+    height: 40px;
+    width: 100px;
+}
+
+button {
+    width: 70px;
+    height: 40px;
+    border: 1px brown solid;
+    border-radius: 10px;
+    margin-right: 20px ;
+}
+
+button:hover{
+    color: red;
+}
+.my-frame{
+    border: 10px solid;
+    padding: 30px;
+    align-content: center;
+
+}
+
+ .float-group-left{
+    float: left;
+    size: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+ .float-group-right{
+    float: right;
+    size: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.clear{
+    clear: both;
+}
+.my-form{
+    padding: 15px;
+}
+
+.input-group{
+    padding: 10px;
+}
+
+ 
+.float-group-right:hover,
+.input-group:hover,
+.float-group-left:hover{
+    color: red;
+}
+
+.input-group:after{
+    color: blue;
+}
+
+.my-form label{
+    display: block;
+}
+.my-form input[type="text"], 
+.my-form input[type="email"],
+.my-form textarea {
+    padding: 10px;
+    width: 100%;
+}
+
+#occupation, #birthday, #avatar{
+    display: inline;
+}
+
+.my-form fieldset {
+    padding: 30px;
+}

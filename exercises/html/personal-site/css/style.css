@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+
+header{
+    background-color: #111111;
+    color: #E8E8EA;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-container{
+    width: 80%;
+    margin: auto;
+
+}
+.header-container .logo{
+    float: left;
+    width: 7.5%;
+    margin: 0;
+    padding: 0;
+    border: 2px saddlebrown solid;
+}
+.header-container nav{
+    float: right;
+}
+.header-container nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header-container nav li{
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 35px;
+
+    position: relative;
+}
+
+.header-container nav a{
+    color: #E8E8EA;
+    padding: 5px;
+    border: 1px transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    /*font-size: auto;*/
+}
+
+.header-container nav a:hover{
+    color: rgb(38, 138, 252);
+    border: white solid;
+    cursor: pointer;
+    transition: all ease-out 200ms;
+}
+/*
+ .header-container nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    top:0;
+    width: 0%;
+    transition: all ease-in-out 200ms;
+}
+*/
+ .header-container nav a:hover::before{
+    width: 100%;
+}
+
+
+footer{
+    background-color: #F5F5F7;
+}
+.footer-container{
+    width: 80%;
+    margin: auto;
+    padding: auto;
+}
+
+.footer-container nav{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container nav li{
+    color:#919095;
+    display: inline-block; 
+     position: relative; 
+     margin: 0px 20px;
+}
+
+.footer-container nav ul{
+    list-style: none;
+    padding: 34px;
+}
+
+.footer-container .logo{
+    float: left;
+    width: 7.5%;
+    padding: 0;
+    margin-right:20px;
+
+    border: 2px #424244 solid;
+}
+
+.footer-container nav a{
+    color: #919095;
+    border: 1px transparent;
+    text-decoration: none;
+    /*font-size: auto;*/
+}
+
+.atcl {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 55px;
+    padding: 20px;
+    line-height: 2rem;
+    border: 2px black solid;
+}
+
+.atcl p{
+    text-align:justify ;
+}
+
+.hover-red:hover{
+    color: red;
+}
+
+.clear-container{
+    clear: both;
+}
+
+iframe{
+    width: 90%;
+    height: 600px;
+
+}
+
+.contact-left{
+    float: left;
+    width: 25%;
+    border: 2px black solid;
+    margin: 80px 60px;
+    padding: 20px;
+}
+
+
+.contact-right{
+    float: right;
+    width: 50%;
+    margin: 80px 0px;
+    padding: 40px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 70px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  background-color: cadetblue;
+}
+
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  font-size: 150px;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+
+  font-size: 150px;
+}
+
+.fa-linkedin{
+    background-color: #0A66C2;
+    color: white;
+}
+
+.fa-skype{
+    background-color: #2797E1;
+    color: white;
+}
+
+.email-btn{
+    size: auto;
+    background-color:cornflowerblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.email-btn:hover{
+    color: rgb(236, 10, 29);
+}
