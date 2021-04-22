@@ -216,3 +216,7 @@ iframe{
 .email-btn:hover{
     color: rgb(236, 10, 29);
 }
+
+.txt-shadow{
+    text-shadow: 1px 2px rgb(23, 23, 139);
+}
