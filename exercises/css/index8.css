@@ -1,0 +1,25 @@
+*{
+    border-width: 1px ;
+    border-style: solid;
+}
+html{
+    border-color: red;
+}
+div{
+    border: blue;
+}
+p{
+    border-width: 2px ;
+    border-color: green;
+}
+span{
+    border-width: 2px;
+    border-color: coral;
+    border-style: dashed;
+}
+.radius{
+    border-width: 2px;
+    border-color: orange;
+    border-radius: 20px;
+    border-style: solid;
+}

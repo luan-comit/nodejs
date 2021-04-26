@@ -222,3 +222,13 @@ footer{
     text-decoration: none;
     /*font-size: auto;*/
 }
+
+.contact-left{
+    float: left;
+    width: 45%;
+}
+
+.contact-right{
+    float: right;
+    width: 45%;
+}
